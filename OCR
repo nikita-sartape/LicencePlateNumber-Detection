@@ -1,0 +1,33 @@
+Start
+
+1. Receive uploaded image of a vehicle
+   |
+   V
+2. Preprocess the image:
+   - Convert to grayscale
+   - Apply noise reduction
+   - Detect edges
+   |
+   V
+3. Localize license plate region:
+   - Use object detection to locate vehicles
+   - Extract license plate region
+   |
+   V
+4. Segment characters:
+   - Split license plate region into individual characters
+   |
+   V
+5. Recognize characters:
+   - Pass each character through OCR engine
+   - Recognize characters using trained models or algorithms
+   |
+   V
+6. Post-processing and validation:
+   - Refine and validate recognized characters
+   |
+   V
+7. Output recognized license plate text
+   |
+   V
+End

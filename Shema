@@ -1,0 +1,23 @@
+CREATE TABLE Tollbooth (
+    tollbooth_id INT PRIMARY KEY,
+    location VARCHAR(255),
+    lane_number INT
+);
+
+CREATE TABLE Vehicle (
+    vehicle_id INT PRIMARY KEY,
+    license_plate_number VARCHAR(20),
+    make VARCHAR(50),
+    model VARCHAR(50),
+    color VARCHAR(20)
+);
+
+CREATE TABLE Transaction (
+    transaction_id INT PRIMARY KEY,
+    vehicle_id INT,
+    tollbooth_id INT,
+    timestamp DATETIME,
+    amount DECIMAL(10, 2),
+    FOREIGN KEY (vehicle_id) REFERENCES Vehicle(vehicle_id),
+    FOREIGN KEY (tollbooth_id) REFERENCES Tollbooth(tollbooth_id)
+);

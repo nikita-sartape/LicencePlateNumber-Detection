@@ -1,0 +1,23 @@
+license_plate_detection/
+│
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── example/
+│   │   │           ├── api/
+│   │   │           │   └── LicensePlateDetectionController.java
+│   │   │           ├── model/
+│   │   │           │   └── LicensePlateDetectionService.java
+│   │   │           └── azure/
+│   │   │               └── AzureCognitiveService.java
+│   │   └── resources/
+│   │       └── azure_cognitive_service_credentials.json
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── api/
+│                       └── LicensePlateDetectionControllerTest.java
+│
+├── pom.xml
